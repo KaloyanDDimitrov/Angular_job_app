@@ -1,0 +1,37 @@
+
+<div *ngIf="dataLoaded">
+    <form [formGroup]="editEmployeeForm" (submit)="updateEmployee()" class="was-validated">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">First name</label>
+        <input type="text" class="form-control" id="inputFirstName" placeholder="First name" required formControlName="firstName" min="1">
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Second name</label>
+        <input type="text" class="form-control" id="inputSecondName" placeholder="Second name" required formControlName="secondName" min="1">
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+    </div>
+    
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">Job position</label>
+        <input type="text" class="form-control" id="inputJobPosition" placeholder="Job position" required formControlName="position" min="1">
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputState">Age</label>
+        <input type="number" class="form-control" id="inputAge" placeholder="Age" formControlName="age" min="1" required>
+        <div class="invalid-feedback">Please select age.</div>
+      </div>
+      
+    </div>
+    <div style="float: right;">
+      <a href="/" style="margin-right:1em;" class="btn btn-info"> <i class="fas fa-arrow-left"></i> Return</a>
+      <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+    
+    
+  </form>
+</div>
