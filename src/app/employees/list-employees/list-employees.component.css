@@ -16,6 +16,15 @@ a{
 i{
     color:white;
 }
+.card{
+    background-color: rgba(0, 0, 0, 0.8);
+     /* Add shadows to create the "card" effect */
+  box-shadow: 0 6px 16px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+h6,small{
+    color:#f2AA4cff
+}
 .optBtn a{
     margin-left: 0.5em;
 }
