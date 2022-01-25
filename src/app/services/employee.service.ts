@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class EmployeeService {
 
-  baseUrl:string="http://10.0.0.101:3000/"
+  baseUrl:string="http://77.78.15.166/"
   constructor(private http:HttpClient) { }
   
   listEmployees(){
