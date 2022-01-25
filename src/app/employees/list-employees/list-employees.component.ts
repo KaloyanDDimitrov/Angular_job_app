@@ -10,14 +10,16 @@ import { Observable } from 'rxjs';
 export class ListEmployeesComponent implements OnInit {
 
   listEmployees:any;
-
+ total:any
   constructor(private employeeService:EmployeeService) { }
 
   ngOnInit(): void {
     this.employeeService.listEmployees().subscribe(data=>{
       this.listEmployees = data;
+      this.total=this.listEmployees.length
     });
 
   }
+  
 
 }

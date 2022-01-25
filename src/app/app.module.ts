@@ -10,6 +10,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { EmployeesModule } from './employees/employees.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     
   ],
   imports: [
+   
     BrowserModule,
     AppRoutingModule,
     EmployeesModule,
