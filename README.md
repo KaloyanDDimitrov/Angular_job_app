@@ -10,6 +10,8 @@ U- updatin employee data
 D- deleting employee  
 
 Using custom API for sending and receiving data.
+The API is build by me and it is only for the angular job app.
+It will be removed after that !!!.
 
 ## Installation
 
